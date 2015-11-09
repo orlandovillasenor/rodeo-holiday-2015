@@ -1,0 +1,107 @@
+html, body {    
+    height: 100%;
+    width: 100%;
+}
+body {
+    margin: 0;
+}
+.sky {
+    height: 100%;
+    background-image: url('../img/rodeo_christmas_background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family: Helvetica;
+    display: block;
+}
+.sky canvas {
+    z-index: 15;
+}
+.intro {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    z-index: 10;
+}
+.intro img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+}
+.snowglobe-wrap {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+.snowglobe-wrap .globe {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 4%;
+    opacity: 1;
+}
+.snowglobe-wrap .merry-christmas {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.snowglobe-wrap .from {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.snowglobe-wrap .your-friends {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.snowglobe-wrap .hat {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+}
+audio {
+    display: none;
+}
+@media only screen and (max-width: 480px) {
+    .sky {
+        background-image: url('../img/rodeo_christmas_background_small.jpg');
+    }
+    .snowglobe-wrap .merry-christmas, .snowglobe-wrap .from, .snowglobe-wrap .your-friends, .snowglobe-wrap .hat {
+        padding: 0 20px;
+    }
+    .snowglobe-wrap .globe {
+        max-width: 90%;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+    .snowglobe-wrap {
+        max-width: 90%;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .snowglobe-wrap .merry-christmas, .snowglobe-wrap .from, .snowglobe-wrap .your-friends, .snowglobe-wrap .hat {
+        padding: 0 10px;
+    }
+}
